@@ -1,0 +1,163 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-image: url("Gambar/motif.jpg");
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 95%;
+}
+footer{
+    height: 5%;
+    color: white;
+  }
+.footer-mini{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  width: 80%;
+  height: 100%;
+  background: #8d5f14;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  border: 5px solid #ca881d;
+  border-radius: 10px;
+  display: block;  
+  height: 500px;
+  object-fit: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.swiper-pagination-bullet{
+  background-color: #FAEAB1;
+}
+
+.detail-field{
+  width: 100%;
+  height: 95%;
+  padding: 0 100px 0 100px;
+
+
+}
+
+.detail-show{
+
+  height: 92%;
+  background-color: #FAEAB1;
+  width: 90%;
+  border-radius: 20px;
+  border: 5px solid #ca881d;
+}
+
+.detail-part-1{
+
+  height: 42%;
+
+  width: 100%;
+  padding-top: 30px;
+
+}
+
+.detail-part-2{
+  font-size: 18px;
+ padding: 20px;
+  height: 50%;
+  margin: 0 ;
+  background-color: #FAEAB1;
+  width: 100%;
+  border-radius: 20px;
+  border: 5px solid #ca881d;
+
+}
+
+.detail-part-1-left{
+  height: 190px;
+  background-color: #FAEAB1;
+  border-radius: 20px;
+  border: 5px solid #ca881d;
+}
+
+.detail-part-1-right{
+  height: 190px;
+  background-color: #FAEAB1;
+  border-radius: 20px;
+  border: 5px solid #ca881d;
+  padding: 20px;
+}
+
+
+.exit-button{
+position: relative;
+float: right;
+height: 0;
+}
+#loader {
+  background-image: url("Gambar/motif.jpg");
+  border: 12px solid #FAEAB1;
+  border-radius: 50%;
+  border-top: 12px solid #ca881d;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.center-load {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.inp {
+  background: none;
+  width: 100%;
+  border:none;
+  border-bottom: 1px solid #ca881d;
+  padding: 5px 10px;
+  outline: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.4s 0.4s ease; 
+  text-indent: -100%;
+  opacity: 1;
+}
